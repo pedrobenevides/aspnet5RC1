@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Presentation", "4 - Pre
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CarWash.Web", "CarWash.Web\CarWash.Web.xproj", "{73D97091-F1BE-46C4-BA09-FC639E5B0C51}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Infrastructure", "1 - Infrastructure", "{2B9F6DE2-4C0C-486E-939B-CD8BC8F30380}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Data", "1.1 - Data", "{FCDEC6EC-29DC-47A2-A06A-8E58BE36610B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CarWash.Infrastructure.EF", "CarWash.Infrastructure.EF\CarWash.Infrastructure.EF.xproj", "{E3BC129B-466D-46E3-B081-570D42E20BBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +31,10 @@ Global
 		{73D97091-F1BE-46C4-BA09-FC639E5B0C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73D97091-F1BE-46C4-BA09-FC639E5B0C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73D97091-F1BE-46C4-BA09-FC639E5B0C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3BC129B-466D-46E3-B081-570D42E20BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3BC129B-466D-46E3-B081-570D42E20BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3BC129B-466D-46E3-B081-570D42E20BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3BC129B-466D-46E3-B081-570D42E20BBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5C30FD65-D89E-437B-A6C9-7CCEC70B992A} = {11C3440A-7122-4F81-9083-2F1B4C917B63}
 		{73D97091-F1BE-46C4-BA09-FC639E5B0C51} = {DD721705-5FF0-4741-A7C0-C79DC535DE4C}
+		{FCDEC6EC-29DC-47A2-A06A-8E58BE36610B} = {2B9F6DE2-4C0C-486E-939B-CD8BC8F30380}
+		{E3BC129B-466D-46E3-B081-570D42E20BBE} = {FCDEC6EC-29DC-47A2-A06A-8E58BE36610B}
 	EndGlobalSection
 EndGlobal
