@@ -1,6 +1,6 @@
 ﻿namespace CarWash.Domain.Entities
 {
-    public class Car
+    public class Car : BaseEntity
     {
         public string Model { get; set; }
         public string LicensePlate { get; set; }

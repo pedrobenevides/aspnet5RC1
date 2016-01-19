@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CarWash.Domain", "CarWash.Domain\CarWash.Domain.xproj", "{5C30FD65-D89E-437B-A6C9-7CCEC70B992A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Domain", "0 - Domain", "{11C3440A-7122-4F81-9083-2F1B4C917B63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Presentation", "4 - Presentation", "{DD721705-5FF0-4741-A7C0-C79DC535DE4C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CarWash.Web", "CarWash.Web\CarWash.Web.xproj", "{73D97091-F1BE-46C4-BA09-FC639E5B0C51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C30FD65-D89E-437B-A6C9-7CCEC70B992A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C30FD65-D89E-437B-A6C9-7CCEC70B992A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C30FD65-D89E-437B-A6C9-7CCEC70B992A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C30FD65-D89E-437B-A6C9-7CCEC70B992A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D97091-F1BE-46C4-BA09-FC639E5B0C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D97091-F1BE-46C4-BA09-FC639E5B0C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D97091-F1BE-46C4-BA09-FC639E5B0C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D97091-F1BE-46C4-BA09-FC639E5B0C51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C30FD65-D89E-437B-A6C9-7CCEC70B992A} = {11C3440A-7122-4F81-9083-2F1B4C917B63}
+		{73D97091-F1BE-46C4-BA09-FC639E5B0C51} = {DD721705-5FF0-4741-A7C0-C79DC535DE4C}
+	EndGlobalSection
+EndGlobal
