@@ -2,8 +2,7 @@
   "locked": false,
   "version": 2,
   "targets": {
-    ".NETFramework,Version=v4.5.1": {},
-    ".NETPlatform,Version=v5.4": {
+    ".NETCore,Version=v5.0": {
       "Microsoft.CSharp/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -25,19 +24,35 @@
           "System.Threading": "4.0.10"
         },
         "compile": {
-          "ref/dotnet5.1/Microsoft.CSharp.dll": {}
+          "ref/netcore50/Microsoft.CSharp.dll": {}
         },
         "runtime": {
-          "lib/dotnet5.4/Microsoft.CSharp.dll": {}
+          "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
       "System.Collections/4.0.11-beta-23516": {
         "type": "package",
         "dependencies": {
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Threading": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Collections.dll": {}
+          "ref/netcore50/System.Collections.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Collections.dll": {}
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcore50/System.Diagnostics.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Diagnostics.Contracts.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.0.10": {
@@ -47,6 +62,9 @@
         },
         "compile": {
           "ref/dotnet/System.Diagnostics.Debug.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Diagnostics.Debug.dll": {}
         }
       },
       "System.Dynamic.Runtime/4.0.0": {
@@ -58,7 +76,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Dynamic.Runtime.dll": {}
+          "ref/netcore50/System.Dynamic.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Globalization/4.0.10": {
@@ -68,6 +89,9 @@
         },
         "compile": {
           "ref/dotnet/System.Globalization.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Globalization.dll": {}
         }
       },
       "System.IO/4.0.0": {
@@ -78,7 +102,10 @@
           "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.IO.dll": {}
+          "ref/netcore50/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Linq/4.0.1-beta-23516": {
@@ -91,10 +118,10 @@
           "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
-          "ref/dotnet5.1/System.Linq.dll": {}
+          "ref/netcore50/System.Linq.dll": {}
         },
         "runtime": {
-          "lib/dotnet5.4/System.Linq.dll": {}
+          "lib/netcore50/System.Linq.dll": {}
         }
       },
       "System.Linq.Expressions/4.0.0": {
@@ -104,7 +131,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Linq.Expressions.dll": {}
+          "ref/netcore50/System.Linq.Expressions.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.ObjectModel/4.0.10": {
@@ -123,6 +153,12 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
+      "System.Private.Uri/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/netcore50/_._": {}
+        }
+      },
       "System.Reflection/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -132,52 +168,85 @@
         },
         "compile": {
           "ref/dotnet/System.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.dll": {}
         }
       },
       "System.Reflection.Extensions/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
-          "ref/dotnet/System.Reflection.Extensions.dll": {}
+          "ref/netcore50/System.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.Extensions.dll": {}
         }
       },
       "System.Reflection.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Runtime": "4.0.0"
+          "System.Runtime": "4.0.0",
+          "System.Threading": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Reflection.Primitives.dll": {}
+          "ref/netcore50/System.Reflection.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.Primitives.dll": {}
         }
       },
       "System.Reflection.TypeExtensions/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Contracts": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
           "ref/dotnet/System.Reflection.TypeExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.TypeExtensions.dll": {}
         }
       },
       "System.Resources.ResourceManager/4.0.0": {
         "type": "package",
         "dependencies": {
           "System.Globalization": "4.0.0",
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Reflection": "4.0.10",
+          "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/dotnet/System.Resources.ResourceManager.dll": {}
+          "ref/netcore50/System.Resources.ResourceManager.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Resources.ResourceManager.dll": {}
         }
       },
       "System.Runtime/4.0.21-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.0.1-beta-23516"
+        },
         "compile": {
-          "ref/dotnet5.4/System.Runtime.dll": {}
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.dll": {}
         }
       },
       "System.Runtime.Extensions/4.0.10": {
@@ -187,6 +256,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Runtime.Handles/4.0.0": {
@@ -196,6 +268,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Handles.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.Handles.dll": {}
         }
       },
       "System.Runtime.InteropServices/4.0.20": {
@@ -208,6 +283,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.InteropServices.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.InteropServices.dll": {}
         }
       },
       "System.Text.Encoding/4.0.0": {
@@ -216,7 +294,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Text.Encoding.dll": {}
+          "ref/netcore50/System.Text.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Threading/4.0.11-beta-23516": {
@@ -226,7 +307,10 @@
           "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Threading.dll": {}
+          "ref/netcore50/System.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Threading.Tasks/4.0.0": {
@@ -235,13 +319,14 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Threading.Tasks.dll": {}
+          "ref/netcore50/System.Threading.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       }
     },
-    ".NETFramework,Version=v4.5.1/win7-x86": {},
-    ".NETFramework,Version=v4.5.1/win7-x64": {},
-    ".NETPlatform,Version=v5.4/win7-x86": {
+    ".NETCore,Version=v5.0/win7-x86": {
       "Microsoft.CSharp/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -263,25 +348,53 @@
           "System.Threading": "4.0.10"
         },
         "compile": {
-          "ref/dotnet5.1/Microsoft.CSharp.dll": {}
+          "ref/netcore50/Microsoft.CSharp.dll": {}
         },
         "runtime": {
-          "lib/dotnet5.4/Microsoft.CSharp.dll": {}
+          "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "runtime.win7.System.Private.Uri/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
       "runtime.win7.System.Threading/4.0.11-beta-23516": {
         "type": "package",
         "compile": {
           "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/netcore50/System.Threading.dll": {}
         }
       },
       "System.Collections/4.0.11-beta-23516": {
         "type": "package",
         "dependencies": {
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Threading": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Collections.dll": {}
+          "ref/netcore50/System.Collections.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Collections.dll": {}
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcore50/System.Diagnostics.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Diagnostics.Contracts.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.0.10": {
@@ -291,6 +404,9 @@
         },
         "compile": {
           "ref/dotnet/System.Diagnostics.Debug.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Diagnostics.Debug.dll": {}
         }
       },
       "System.Dynamic.Runtime/4.0.0": {
@@ -302,7 +418,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Dynamic.Runtime.dll": {}
+          "ref/netcore50/System.Dynamic.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Globalization/4.0.10": {
@@ -312,6 +431,9 @@
         },
         "compile": {
           "ref/dotnet/System.Globalization.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Globalization.dll": {}
         }
       },
       "System.IO/4.0.0": {
@@ -322,7 +444,10 @@
           "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.IO.dll": {}
+          "ref/netcore50/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Linq/4.0.1-beta-23516": {
@@ -335,10 +460,10 @@
           "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
-          "ref/dotnet5.1/System.Linq.dll": {}
+          "ref/netcore50/System.Linq.dll": {}
         },
         "runtime": {
-          "lib/dotnet5.4/System.Linq.dll": {}
+          "lib/netcore50/System.Linq.dll": {}
         }
       },
       "System.Linq.Expressions/4.0.0": {
@@ -348,7 +473,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Linq.Expressions.dll": {}
+          "ref/netcore50/System.Linq.Expressions.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.ObjectModel/4.0.10": {
@@ -367,6 +495,12 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
+      "System.Private.Uri/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/netcore50/_._": {}
+        }
+      },
       "System.Reflection/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -376,52 +510,85 @@
         },
         "compile": {
           "ref/dotnet/System.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.dll": {}
         }
       },
       "System.Reflection.Extensions/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
-          "ref/dotnet/System.Reflection.Extensions.dll": {}
+          "ref/netcore50/System.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.Extensions.dll": {}
         }
       },
       "System.Reflection.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Runtime": "4.0.0"
+          "System.Runtime": "4.0.0",
+          "System.Threading": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Reflection.Primitives.dll": {}
+          "ref/netcore50/System.Reflection.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.Primitives.dll": {}
         }
       },
       "System.Reflection.TypeExtensions/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Contracts": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
           "ref/dotnet/System.Reflection.TypeExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.TypeExtensions.dll": {}
         }
       },
       "System.Resources.ResourceManager/4.0.0": {
         "type": "package",
         "dependencies": {
           "System.Globalization": "4.0.0",
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Reflection": "4.0.10",
+          "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/dotnet/System.Resources.ResourceManager.dll": {}
+          "ref/netcore50/System.Resources.ResourceManager.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Resources.ResourceManager.dll": {}
         }
       },
       "System.Runtime/4.0.21-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.0.1-beta-23516"
+        },
         "compile": {
-          "ref/dotnet5.4/System.Runtime.dll": {}
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.dll": {}
         }
       },
       "System.Runtime.Extensions/4.0.10": {
@@ -431,6 +598,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Runtime.Handles/4.0.0": {
@@ -440,6 +610,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Handles.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.Handles.dll": {}
         }
       },
       "System.Runtime.InteropServices/4.0.20": {
@@ -452,6 +625,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.InteropServices.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.InteropServices.dll": {}
         }
       },
       "System.Text.Encoding/4.0.0": {
@@ -460,7 +636,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Text.Encoding.dll": {}
+          "ref/netcore50/System.Text.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Threading/4.0.11-beta-23516": {
@@ -470,7 +649,10 @@
           "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Threading.dll": {}
+          "ref/netcore50/System.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Threading.Tasks/4.0.0": {
@@ -479,11 +661,14 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Threading.Tasks.dll": {}
+          "ref/netcore50/System.Threading.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       }
     },
-    ".NETPlatform,Version=v5.4/win7-x64": {
+    ".NETCore,Version=v5.0/win7-x64": {
       "Microsoft.CSharp/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -505,25 +690,53 @@
           "System.Threading": "4.0.10"
         },
         "compile": {
-          "ref/dotnet5.1/Microsoft.CSharp.dll": {}
+          "ref/netcore50/Microsoft.CSharp.dll": {}
         },
         "runtime": {
-          "lib/dotnet5.4/Microsoft.CSharp.dll": {}
+          "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "runtime.win7.System.Private.Uri/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
       "runtime.win7.System.Threading/4.0.11-beta-23516": {
         "type": "package",
         "compile": {
           "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/netcore50/System.Threading.dll": {}
         }
       },
       "System.Collections/4.0.11-beta-23516": {
         "type": "package",
         "dependencies": {
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Threading": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Collections.dll": {}
+          "ref/netcore50/System.Collections.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Collections.dll": {}
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcore50/System.Diagnostics.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Diagnostics.Contracts.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.0.10": {
@@ -533,6 +746,9 @@
         },
         "compile": {
           "ref/dotnet/System.Diagnostics.Debug.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Diagnostics.Debug.dll": {}
         }
       },
       "System.Dynamic.Runtime/4.0.0": {
@@ -544,7 +760,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Dynamic.Runtime.dll": {}
+          "ref/netcore50/System.Dynamic.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Globalization/4.0.10": {
@@ -554,6 +773,9 @@
         },
         "compile": {
           "ref/dotnet/System.Globalization.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Globalization.dll": {}
         }
       },
       "System.IO/4.0.0": {
@@ -564,7 +786,10 @@
           "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.IO.dll": {}
+          "ref/netcore50/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Linq/4.0.1-beta-23516": {
@@ -577,10 +802,10 @@
           "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
-          "ref/dotnet5.1/System.Linq.dll": {}
+          "ref/netcore50/System.Linq.dll": {}
         },
         "runtime": {
-          "lib/dotnet5.4/System.Linq.dll": {}
+          "lib/netcore50/System.Linq.dll": {}
         }
       },
       "System.Linq.Expressions/4.0.0": {
@@ -590,7 +815,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Linq.Expressions.dll": {}
+          "ref/netcore50/System.Linq.Expressions.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.ObjectModel/4.0.10": {
@@ -609,6 +837,12 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
+      "System.Private.Uri/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/netcore50/_._": {}
+        }
+      },
       "System.Reflection/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -618,52 +852,85 @@
         },
         "compile": {
           "ref/dotnet/System.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.dll": {}
         }
       },
       "System.Reflection.Extensions/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
-          "ref/dotnet/System.Reflection.Extensions.dll": {}
+          "ref/netcore50/System.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.Extensions.dll": {}
         }
       },
       "System.Reflection.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Runtime": "4.0.0"
+          "System.Runtime": "4.0.0",
+          "System.Threading": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Reflection.Primitives.dll": {}
+          "ref/netcore50/System.Reflection.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.Primitives.dll": {}
         }
       },
       "System.Reflection.TypeExtensions/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Diagnostics.Contracts": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10"
         },
         "compile": {
           "ref/dotnet/System.Reflection.TypeExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Reflection.TypeExtensions.dll": {}
         }
       },
       "System.Resources.ResourceManager/4.0.0": {
         "type": "package",
         "dependencies": {
           "System.Globalization": "4.0.0",
-          "System.Reflection": "4.0.0",
-          "System.Runtime": "4.0.0"
+          "System.Reflection": "4.0.10",
+          "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/dotnet/System.Resources.ResourceManager.dll": {}
+          "ref/netcore50/System.Resources.ResourceManager.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Resources.ResourceManager.dll": {}
         }
       },
       "System.Runtime/4.0.21-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.0.1-beta-23516"
+        },
         "compile": {
-          "ref/dotnet5.4/System.Runtime.dll": {}
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.dll": {}
         }
       },
       "System.Runtime.Extensions/4.0.10": {
@@ -673,6 +940,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Runtime.Handles/4.0.0": {
@@ -682,6 +952,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Handles.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.Handles.dll": {}
         }
       },
       "System.Runtime.InteropServices/4.0.20": {
@@ -694,6 +967,9 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.InteropServices.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.InteropServices.dll": {}
         }
       },
       "System.Text.Encoding/4.0.0": {
@@ -702,7 +978,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Text.Encoding.dll": {}
+          "ref/netcore50/System.Text.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Threading/4.0.11-beta-23516": {
@@ -712,7 +991,10 @@
           "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
-          "ref/dotnet5.4/System.Threading.dll": {}
+          "ref/netcore50/System.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       },
       "System.Threading.Tasks/4.0.0": {
@@ -721,7 +1003,10 @@
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Threading.Tasks.dll": {}
+          "ref/netcore50/System.Threading.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/wpa81/_._": {}
         }
       }
     }
@@ -775,6 +1060,20 @@
         "ref/wpa81/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "runtime.win7.System.Private.Uri/4.0.1-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "dENjtxxx1L+OXWnxGRzeAD8mJC//NljPPLXNWg1H5BG6IB4YTLzBSzfeCOZQVpQaKfCYE7Mzjq12uCVZpBG4vg==",
+      "files": [
+        "ref/dotnet/_._",
+        "runtime.win7.System.Private.Uri.4.0.1-beta-23516.nupkg",
+        "runtime.win7.System.Private.Uri.4.0.1-beta-23516.nupkg.sha512",
+        "runtime.win7.System.Private.Uri.nuspec",
+        "runtimes/win7/lib/DNXCore50/System.Private.Uri.dll",
+        "runtimes/win7/lib/netcore50/System.Private.Uri.dll",
+        "runtimes/win8-aot/lib/netcore50/System.Private.Uri.dll"
       ]
     },
     "runtime.win7.System.Threading/4.0.11-beta-23516": {
@@ -851,6 +1150,39 @@
         "System.Collections.4.0.11-beta-23516.nupkg",
         "System.Collections.4.0.11-beta-23516.nupkg.sha512",
         "System.Collections.nuspec"
+      ]
+    },
+    "System.Diagnostics.Contracts/4.0.0": {
+      "type": "package",
+      "sha512": "lMc7HNmyIsu0pKTdA4wf+FMq5jvouUd+oUpV4BdtyqoV0Pkbg9u/7lTKFGqpjZRQosWHq1+B32Lch2wf4AmloA==",
+      "files": [
+        "lib/DNXCore50/System.Diagnostics.Contracts.dll",
+        "lib/net45/_._",
+        "lib/netcore50/System.Diagnostics.Contracts.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "ref/dotnet/de/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/es/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/fr/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/it/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/ja/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/ko/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/ru/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/System.Diagnostics.Contracts.dll",
+        "ref/dotnet/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/zh-hans/System.Diagnostics.Contracts.xml",
+        "ref/dotnet/zh-hant/System.Diagnostics.Contracts.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Diagnostics.Contracts.dll",
+        "ref/netcore50/System.Diagnostics.Contracts.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Diagnostics.Contracts.dll",
+        "System.Diagnostics.Contracts.4.0.0.nupkg",
+        "System.Diagnostics.Contracts.4.0.0.nupkg.sha512",
+        "System.Diagnostics.Contracts.nuspec"
       ]
     },
     "System.Diagnostics.Debug/4.0.10": {
@@ -1136,6 +1468,18 @@
         "System.ObjectModel.4.0.10.nupkg",
         "System.ObjectModel.4.0.10.nupkg.sha512",
         "System.ObjectModel.nuspec"
+      ]
+    },
+    "System.Private.Uri/4.0.1-beta-23516": {
+      "type": "package",
+      "sha512": "PISxTW5FSZw8cQ8DOvq2pHHz48mok3ex0/QU2gcHG5PACvobxaXQl2oR345vqOx6C15l10bJPVkKZlgi2Ic4KQ==",
+      "files": [
+        "ref/dnxcore50/_._",
+        "ref/netcore50/_._",
+        "runtime.json",
+        "System.Private.Uri.4.0.1-beta-23516.nupkg",
+        "System.Private.Uri.4.0.1-beta-23516.nupkg.sha512",
+        "System.Private.Uri.nuspec"
       ]
     },
     "System.Reflection/4.0.10": {
@@ -1641,8 +1985,7 @@
   },
   "projectFileDependencyGroups": {
     "": [],
-    ".NETFramework,Version=v4.5.1": [],
-    ".NETPlatform,Version=v5.4": [
+    ".NETCore,Version=v5.0": [
       "Microsoft.CSharp >= 4.0.1-beta-23516",
       "System.Collections >= 4.0.11-beta-23516",
       "System.Linq >= 4.0.1-beta-23516",
